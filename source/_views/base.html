@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
+    <meta property="og:image" content="{{ site.url }}/images/logo/zgphp.png" />
+    {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | striptags | replace({"\\n":""}) }}" />{% else %}<meta property="og:description" content="{{ page.title }}" />{% endif %}
+
+    <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.url }}/lib/bower_components/material-design-lite/material.min.css">
+    <script src="{{ site.url }}/lib/bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+</head>
+<body>
+    {% block main %}{% endblock %}
+</body>
+</html>
