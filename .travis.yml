@@ -10,7 +10,7 @@ before_install:
 - echo -e "machine github.com\n  login $GH_TOKEN" >> ~/.netrc
 install:
 - composer install --prefer-dist
-script: sh build.sh
+script: sh app/bin/publish.sh
 after_success: if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh publish.sh; fi
 env:
   global:
