@@ -27,7 +27,8 @@
   "extra": {
     "tools": {
       "sculpin": {
-        "url": "https://download.sculpin.io/sculpin.phar"
+        "url": "https://download.sculpin.io/sculpin.phar",
+        "only-dev": false
       }
     }
   }
