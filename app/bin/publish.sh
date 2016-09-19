@@ -16,6 +16,9 @@ fi
 # Create a repo for the built website for the master branch
 git init
 
+git config --global user.email "mfuehrer82@gmail.com"
+git config --global user.name "Marcel Funkt"
+
 # commit build
 git add .
 git commit -m "Build website"
