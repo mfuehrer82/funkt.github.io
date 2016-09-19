@@ -1,0 +1,24 @@
+{
+  "name": "mfunkt",
+  "homepage": "https://github.com/mfuehrer82/funkt.github.io",
+  "authors": [
+    "Marcel Führer <mf@move-elevator.de>"
+  ],
+  "description": "my own page",
+  "main": "main.js",
+  "keywords": [
+    "material design",
+    "bower"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}
