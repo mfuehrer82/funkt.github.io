@@ -10,8 +10,8 @@ before_install:
 - echo -e "machine github.com\n  login $GH_TOKEN" >> ~/.netrc
 install:
 - composer install --prefer-dist
-script: sh app/bin/publish.sh
-after_success: if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh publish.sh; fi
+script: sh app/bin/build.sh
+after_success: if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sh app/bin/publish.sh; fi
 env:
   global:
     secure: dRXvLdhqZNxDDoFGYTStFKJYqPTVAxs867glB/KFSgf/TPF/QFl5WEBF7YS5aa6pZ+kL6XnergFlpTnHozcB/DRmZng7N8e8FJfcNkZPxn2zYKl5wBFYnhIwynQS1oxlWgNiAvwQMfdR3ey5He9/y6OIuOp2eDEOUbO1OjWYk5zeUTXR6LS3WlhnmyHW5az1waI74bJKbs4Cr+EDed3tL9+Wxv6h2yYaUNnIoj0aW5icVJzbC1P9YI6iZ5/L11UCfQdxfkGO0+2Ulc1pEaeX90suddIWh8XUU5zA9mweYDUh+xFhZXXUWkvqy1CtOe89QDMHhvvexxPPRGZg2OTjDAo+Pu40SVUJUQsIhjDnWzlyta4h2W6oCgW9Qy9uU5pKksi1L/qUAAwD6dSgZfavVqcWGQecBB2WFxlalEoPIPMG3ZncAuaSvlTtluLwEKEVAeDi/wwuQv/dbDR67GjTEPYVABbJTk9Kiv7DRb6r+jTfx/GEVZRll4o7RCVuc8CdqMrfgZZIrMaUg5rBoT3IrsgzmE5Z/NNu1/srr7bl4FqLDYsIocpx8NIPlG3VQaB/PwtysAZau9M8bgM8qK7dUH8Sif5iQznj6GTVlZNH+Xb4ejCN5fCyKYlWpk35iqg0FRvf0WKxd/wAK+gXWf2d5Fol2LU1jSf3U+HBxBPLatU=
