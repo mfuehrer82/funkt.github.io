@@ -11,12 +11,11 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
     <meta property="og:image" content="{{ site.url }}/images/logo/zgphp.png" />
-    {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | striptags | replace({"\\n":""}) }}" />{% else %}<meta property="og:description" content="{{ page.title }}" />{% endif %}
-
+    
     <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ site.url }}/lib/bower_components/material-design-lite/material.min.css">
-    <script src="{{ site.url }}/lib/bower_components/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="lib/bower_components/material-design-lite/material.min.css">
+    <script src="lib/bower_components/material-design-lite/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--[if lt IE 9]>
