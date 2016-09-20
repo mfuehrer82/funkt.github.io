@@ -17,11 +17,11 @@ fi
 git init
 
 git config --global user.email "mfuehrer82@gmail.com"
-git config --global user.name "Marcel Funkt"
+git config --global user.name "Marcel Fuehrer"
 
 # commit build
 git add .
 git commit -m "Build website"
 
 # push to GitHub Pages
-git push "https://github.com/mfuehrer82/mfuehrer82.github.io.git" -f master
+git push "https://${GH_TOKEN}@${GH_REF}" -f master
