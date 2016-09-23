@@ -1,0 +1,25 @@
+---
+layout: layouts/default
+title: Home
+---
+
+{% block content_main %}
+    <h4>Ja, ich will.</h4>
+
+    <form action="//phpug-dresden.us11.list-manage.com/subscribe/post?u=8ff315933ee2697519dd5ab74&amp;id=f059906ea8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="LNAME" name="LNAME">
+            <label class="mdl-textfield__label" for="LNAME">Name...</label>
+            <span class="mdl-textfield__error">Letters and spaces only</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="EMAIL" name="EMAIL">
+            <label class="mdl-textfield__label" for="EMAIL">Email...</label>
+        </div>
+        <p>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                Registrieren
+            </button>
+        </p>
+    </form>
+{% endblock %}

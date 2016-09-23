@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
+        <meta property="og:image" content="{{ site.url }}/images/logo/zgphp.png" />
+
+        <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_orange-light_blue.min.css">
+
+        <link rel="stylesheet" href="style/default.css">
+        <!--[if lt IE 9]>
+
+        <![endif]-->
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                {% block header %}{% endblock %}
+            </header>
+
+            <aside id="sidebar-nav" class="mdl-navigation">
+                {% block sidebar %}{% endblock %}
+            </aside>
+
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    {% block content %}{% endblock %}
+                </div>
+            </main>
+
+            <footer>
+                {% block footer %}{% endblock %}
+            </footer>
+        </div>
+        <script src="lib/bower_components/material-design-lite/material.min.js"></script>
+    </body>
+</html>
