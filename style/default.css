@@ -1,0 +1,75 @@
+.phpug-logo {
+    height: 48px;
+    width: 48px;
+    margin: 0 10px;
+}
+.one-page-layout {
+    max-width: 900px;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.one-page-layout .mdl-layout .mdl-layout__content {
+    padding-top: 100px;
+    position: relative;
+    width: 60%;
+}
+
+.docs-footer ul {
+    list-style-type: none;
+}
+.docs-footer.mdl-mini-footer {
+    align-items: stretch;
+    flex-direction: column;
+}
+.docs-footer.mdl-mini-footer, .docs-footer.mdl-mini-footer ul {
+    justify-content: center;
+}
+.docs-footer.mdl-mini-footer ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.docs-footer.mdl-mini-footer ul > li > a {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 8px;
+}
+.docs-footer .docs-link-list li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.docs-footer.mdl-mini-footer .mdl-mini-footer--social-btn {
+    background-color: transparent;
+    height: 24px;
+    margin: 0 16px;
+    width: 24px;
+}
+.docs-footer.mdl-mini-footer .social-btn {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.social-btn__twitter {
+    background-image: url("https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png");
+}
+.social-btn__github {
+    background-image: url("https://getmdl.io/assets/github_white_24.svg");
+    height: 22px;
+    width: 22px;
+}
+.social-btn__gplus {
+    background-image: url("https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_24dp.png");
+}
