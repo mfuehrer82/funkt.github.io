@@ -17,8 +17,8 @@
     flex-shrink: 0;
 }
 
-.page-content .headline h3 {
-    text-align: -webkit-center;
+.page-content .headline {
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 5px;
 }
